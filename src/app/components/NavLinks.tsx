@@ -10,7 +10,7 @@ export default function NavLinks() {
 
   return (
     <nav>
-      <ul className='navigation-list flex flex-col gap-3'>
+      <ul className='navigation-list flex flex-col gap-3 w-fit'>
         {links.map((link, index) => (
           <li
             key={index}

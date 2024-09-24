@@ -33,10 +33,10 @@ export default function SocialMediaLinks() {
             className='relative group'>
             <li
               key={index}
-              className='relative polygon-box p-2 px-4 cursor-pointer overflow-hidden font-medium  text-base  bg-indigo-600 text-white z-10 transition-all group-hover:-translate-x-[3px] group-hover:-translate-y-[3px] '>
+              className='relative polygon-box py-2 px-3 sm:py-2 sm:px-4 cursor-pointer overflow-hidden font-medium  text-base  bg-indigo-600 text-white z-10 transition-all group-hover:-translate-x-[3px] group-hover:-translate-y-[3px] '>
               <Link
                 href={link.href}
-                className=' text-2xl'>
+                className=' text-xl sm:text-2xl'>
                 {link.icon}
               </Link>
             </li>
