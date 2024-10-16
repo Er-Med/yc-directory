@@ -10,11 +10,11 @@ const socialLinks = [
     icon: <FaInstagram />,
   },
   {
-    href: "https://linkedin.com/in/yourprofile",
+    href: "https://www.linkedin.com/in/ermilimohamed/",
     icon: <FaLinkedinIn />,
   },
   {
-    href: "https://github.com/yourusername",
+    href: "https://github.com/Er-Med",
     icon: <FaGithubAlt />,
   },
   {

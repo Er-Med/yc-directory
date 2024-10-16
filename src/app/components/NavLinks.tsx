@@ -6,8 +6,6 @@ export default function NavLinks() {
   const [activeLink, setActiveLink] = useState("ABOUT");
   const links = ["ABOUT", "SKILLS", "PROJECTS"];
 
-  // const handleActiveLink = (e) => setActiveLink(e.target.value);
-
   return (
     <nav>
       <ul className='navigation-list flex flex-col gap-3 w-fit'>
