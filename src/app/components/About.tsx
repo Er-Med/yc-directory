@@ -1,6 +1,6 @@
-import { GrReactjs } from "react-icons/gr";
+// import { GrReactjs } from "react-icons/gr";
 import SectionTitle from "./SectionTitle";
-import Image from "next/image";
+// import Image from "next/image";
 import TechIcon from "./TechIcon";
 
 export default function About() {
