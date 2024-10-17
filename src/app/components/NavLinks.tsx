@@ -1,6 +1,5 @@
 "use client";
 import Link from "next/link";
-import "../styles/styles.scss";
 import { useState } from "react";
 export default function NavLinks() {
   const [activeLink, setActiveLink] = useState("ABOUT");

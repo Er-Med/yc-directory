@@ -14,9 +14,7 @@ export default function Projects() {
         <div key={project.id}>
           <Card
             title={project.title}
-            // image={project.image}
             desc={project.desc}
-            // techsList={project.techsList}
             isProjectCard={true}
             techsList={project.techsList}
           />
@@ -27,7 +25,6 @@ export default function Projects() {
         href='/'
         content='View Full Project Archive'
       />
-      {/* </MainBox> */}
     </div>
   );
 }

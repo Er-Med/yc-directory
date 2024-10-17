@@ -1,23 +1,5 @@
-// import { GrReactjs } from "react-icons/gr";
-
-// interface IconParams {
-//   name: string;
-
-// }
-
-// export default function TechIcon({ name }: IconParams) {
-//   return (
-//     <strong className='inline-flex w-fit items-baseline gap-1'>
-//       <span className='self-center'>
-//         <GrReactjs />
-//       </span>
-//       {name}
-//     </strong>
-//   );
-// }
-
 import { GrReactjs } from "react-icons/gr";
-import { FaHtml5, FaCss3Alt, FaJsSquare, FaSass } from "react-icons/fa"; // Example: Import more icons
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaSass } from "react-icons/fa";
 import { RiNextjsFill, RiTailwindCssFill } from "react-icons/ri";
 
 interface IconParams {
@@ -42,7 +24,7 @@ export default function TechIcon({ name }: IconParams) {
       case "reactjs":
         return <GrReactjs className='text-[#61dafb] text-[1.3rem]' />;
       default:
-        return null; // Handle unknown technologies
+        return null;
     }
   };
 

@@ -1,23 +1,13 @@
-// import { GrReactjs } from "react-icons/gr";
 import SectionTitle from "./SectionTitle";
-// import Image from "next/image";
 import TechIcon from "./TechIcon";
 
 export default function About() {
-  // const reactSvg =
   return (
     <section
       id='about'
       className=''>
       <span className='main-span-h block'></span>
       <SectionTitle content='About' />
-      {/* 
-      <Image
-        src='https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg'
-        alt='react icon'
-        width={16}
-        height={16}
-      /> */}
 
       <p className={`  mb-4 tracking-wide `}>
         From a <strong>young age</strong>, I&apos;ve always been fascinated by

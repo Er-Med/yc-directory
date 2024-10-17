@@ -4,6 +4,7 @@ import img from "/projImg.png";
 import { TbArrowUpRight } from "react-icons/tb";
 import MainBox from "./MainBox";
 import Link from "next/link";
+import { FaGithub } from "react-icons/fa";
 
 interface CardProps {
   isProjectCard: boolean;
@@ -58,8 +59,13 @@ export default function Card({
             </span>
           </h3>
           <p className='mb-3 group-hover:!text-white'>{desc}</p>
-          <div className='tech'>
+          <div className='tech flex justify-between'>
             <Tech techsList={techsList} />
+            <Link
+              href='https://github.com/Er-Med'
+              className=' text-xl text-[--gray-color] sm:text-2xl group-hover:!text-white md:me-3'>
+              <FaGithub />
+            </Link>
           </div>
         </div>
       </Link>

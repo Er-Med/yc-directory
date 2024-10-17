@@ -12,9 +12,7 @@ export default function Experience() {
         <div key={exp.id}>
           <Card
             title={exp.title}
-            // image={exp.image}
             desc={exp.desc}
-            // techsList={exp.techsList}
             isProjectCard={false}
             startDate={exp.startDate}
             endDate={exp.endDate}

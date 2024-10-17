@@ -1,9 +1,7 @@
 import Link from "next/link";
 import { FaGithubAlt, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { MdDarkMode } from "react-icons/md";
-import "../styles/styles.scss";
 
-// import * as motion from "framer-motion/client";
 const socialLinks = [
   {
     href: "https://instagram.com/yourprofile",

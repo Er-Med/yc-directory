@@ -34,14 +34,9 @@ const experience = [
 const projects = [
   {
     id: 823,
-    title: "Digital Marketing Agency Website",
-    desc: "Developing a digital marketing agency website using Next.js, SCSS, and Tailwind for a responsive and modern frontend, with Strapi powering the backend for seamless content management.",
-    techsList: [
-      { name: "Next js" },
-      { name: "Scss" },
-      { name: "Tailwindcss" },
-      { name: "strapi" },
-    ],
+    title: "Bicycle Shop Website",
+    desc: "A modern, responsive bicycle shop website built with cutting-edge web technologies. Features include product listings, shopping cart functionality, and a sleek user interface.",
+    techsList: [{ name: "Next js" }, { name: "Tailwindcss" }],
     image: {
       alt: "image",
       src: "image",
@@ -49,8 +44,8 @@ const projects = [
   },
   {
     id: 223,
-    title: "Landing Page for Hisornet",
-    desc: "Created a landing page for Hisornet using pure SCSS and HTML4, focusing on clean, responsive design and optimized performance.",
+    title: "Digital Web Agency Site",
+    desc: "A sleek, responsive website for a digital web agency, showcasing services, portfolio, and team. Features a dynamic content management system for easy updates.",
     techsList: [
       { name: "HTML" },
       { name: "HTML" },
