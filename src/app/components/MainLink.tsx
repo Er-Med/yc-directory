@@ -10,7 +10,7 @@ export default function MainLink({ href, content }: LinkProps) {
     <div className='w-fit group'>
       <Link
         href={href}
-        className='text-lg font-semibold text-[--primary-color] capitalize flex items-center gap-1 group'>
+        className='text-md font-semibold text-[--primary-color] capitalize flex items-center gap-1 group'>
         {content}
         <span className='inline-block group-hover:ps-1 duration-100'>
           <HiArrowNarrowRight className='font-bold' />

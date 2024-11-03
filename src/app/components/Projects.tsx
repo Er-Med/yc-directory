@@ -1,6 +1,5 @@
 import { projects } from "../lib/data";
-import Card from "./Card";
-import MainLink from "./MainLink";
+import ProjectCard from "./ProjectCard";
 import SectionTitle from "./SectionTitle";
 
 export default function Projects() {
@@ -12,19 +11,15 @@ export default function Projects() {
       <SectionTitle content='PROJECTS' />
       {projects.map((project) => (
         <div key={project.id}>
-          <Card
-            title={project.title}
-            desc={project.desc}
-            isProjectCard={true}
-            techsList={project.techsList}
-          />
+          <ProjectCard project={project} />
         </div>
       ))}
 
-      <MainLink
+      {/* Permanent */}
+      {/* <MainLink
         href='/'
         content='View Full Project Archive'
-      />
+      /> */}
     </div>
   );
 }

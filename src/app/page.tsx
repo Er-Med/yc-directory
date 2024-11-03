@@ -6,7 +6,7 @@ import Experience from "./components/Experience";
 
 export default function Home() {
   return (
-    <div className=''>
+    <div>
       <main>
         <Container>
           <div className='grid grid-cols-12 lg:gap-8 '>
@@ -14,7 +14,7 @@ export default function Home() {
               <FixedSection />
             </div>
             <div className='col-span-full lg:col-span-7 bordeer bordeer-gray-100'>
-              <section className='bordesr bosrder-red-400 lg:ps-32 pb-[--main-padding]'>
+              <section className='bordesr bosrder-red-400 lg:ps-24 pb-[--main-padding]'>
                 <About />
                 <Experience />
                 <Projects />
