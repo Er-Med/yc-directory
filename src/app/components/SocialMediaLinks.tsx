@@ -1,12 +1,8 @@
 import Link from "next/link";
-import { FaGithubAlt, FaInstagram, FaLinkedinIn } from "react-icons/fa";
-import { MdDarkMode } from "react-icons/md";
+import { FaGithubAlt, FaLinkedinIn } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
 
 const socialLinks = [
-  {
-    href: "https://instagram.com/yourprofile",
-    icon: <FaInstagram />,
-  },
   {
     href: "https://www.linkedin.com/in/ermilimohamed/",
     icon: <FaLinkedinIn />,
@@ -17,8 +13,12 @@ const socialLinks = [
   },
   {
     href: "#",
-    icon: <MdDarkMode />,
+    icon: <MdOutlineEmail />,
   },
+  // { next version
+  //   href: "#",
+  //   icon: <MdDarkMode />,
+  // },
 ];
 
 export default function SocialMediaLinks() {

@@ -28,10 +28,10 @@ export default function ExperienceCard({ experience }: CardProps) {
         </div>
         {/* START Card body */}
         <div className='content sm:col-span-6'>
-          <h3 className='mb-3 text-base font-semibold text-[--primary-color] group-hover:!text-white tracking-wide flex items-center'>
+          <h3 className='mb-3 text-lg sm:text-lg font-semibold text-[--primary-color] group-hover:!text-white tracking-wide flex items-center'>
             {title.toLocaleUpperCase()}
             <DotSeparator />
-            {company}
+            <span className='text-sm'> {company}</span>
             <span className='ms-2 inline-block group-hover:ps-1 duration-100'>
               <TbArrowUpRight />
             </span>

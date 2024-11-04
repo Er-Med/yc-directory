@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Tech from "./Tech";
-import img from "/projImg.png";
 import MainBox from "./MainBox";
 import Link from "next/link";
 import { FaGithub } from "react-icons/fa";
@@ -11,19 +10,26 @@ interface CardProps {
 }
 
 export default function ProjectCard({ project }: CardProps) {
-  const { title, desc, techsList } = project;
+  const { title, desc, techsList, url, repoUrl, image } = project;
 
   return (
-    <MainBox className='bg-white mb-12 hover:!bg-[--primary-color] group '>
-      <div className=' card grid sm:grid-cols-8 gap-4 '>
-        <div className=' sm:col-span-2 relative'>
-          <Image
-            className='h-4/6 w-full absolute object-cover pt-1 border border-[--balck-color]'
-            src={img}
-            height={100}
-            width={100}
-            alt={"image"}
-          />
+    <MainBox className='relative bg-white mb-12 hover:!bg-[--primary-color] group '>
+      <Link
+        href={url}
+        className='absolute w-full h-full top-0 left-0'
+        target='_blank'
+      />
+      <div className='card grid sm:grid-cols-8 gap-4 '>
+        <div className='sm:col-span-2 relative'>
+          <MainBox className='relative h-32 sm:h-20 !p-0 sm:mt-3'>
+            <Image
+              className=' w-full h-full absolute object-fill'
+              src={image}
+              height={300}
+              width={300}
+              alt={"image"}
+            />
+          </MainBox>
         </div>
         {/* START Card body */}
         <div className='content sm:col-span-6'>
@@ -36,7 +42,7 @@ export default function ProjectCard({ project }: CardProps) {
           <div className='tech flex justify-between'>
             <Tech techsList={techsList} />
             <Link
-              href='https://github.com/Er-Med'
+              href={repoUrl}
               className=' text-xl text-[--gray-color] sm:text-2xl group-hover:!text-white md:me-3'>
               <FaGithub />
             </Link>
