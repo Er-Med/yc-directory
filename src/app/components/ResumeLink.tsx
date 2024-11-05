@@ -5,11 +5,15 @@ interface LinkProps {
   href: string;
   content: string;
 }
-export default function MainLink({ href, content }: LinkProps) {
+export default function ResumeLink({ href, content }: LinkProps) {
   return (
     <div className='w-fit group'>
       <Link
         href={href}
+        target='_blank'
+        // download={true}
+        locale={false}
+        rel='noopener noreferrer'
         className='text-md font-semibold text-[--primary-color] capitalize flex items-center gap-1 group'>
         {content}
         <span className='inline-block group-hover:ps-1 duration-100'>

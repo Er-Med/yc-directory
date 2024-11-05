@@ -1,7 +1,8 @@
+import Link from "next/link";
 import { experiencesList } from "../lib/data";
 import ExperienceCard from "./ExperienceCard";
-import MainLink from "./MainLink";
 import SectionTitle from "./SectionTitle";
+import ResumeLink from "./ResumeLink";
 
 export default function ExperiencesSection() {
   return (
@@ -14,8 +15,17 @@ export default function ExperiencesSection() {
         </div>
       ))}
 
-      <MainLink
-        href='/'
+      {/* <Link
+        href='/Ermili_Mohamed_resume.pdf'
+        target='_blank'
+        // download={true}
+        locale={false}
+        rel='noopener noreferrer'>
+        Resume
+      </Link> */}
+
+      <ResumeLink
+        href='/Ermili_Mohamed_resume.pdf'
         content='View full resume'
       />
     </div>
